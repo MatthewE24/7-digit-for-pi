@@ -1,0 +1,240 @@
+from gpiozero import LED
+from time import sleep
+
+LED10=LED(6) #middle
+LED5=LED(16) #dot
+LED1=LED(21) #bottom left
+LED2=LED(20) #bottom middle
+LED4=LED(26) #bottom right
+LED6=LED(19) #top right
+LED7=LED(13) #top middle
+LED9=LED(12) #top left
+
+def alloff():
+    LED1.off()
+    LED2.off()
+    LED4.off()
+    LED5.off()
+    LED6.off()
+    LED7.off()
+    LED9.off()
+    LED10.off()
+    return
+
+def display1():
+    LED4.on()
+    LED6.on()
+    return
+
+def display2():
+    LED7.on()
+    LED6.on()
+    LED10.on()
+    LED1.on()
+    LED2.on()
+    return
+
+def display3():
+    LED7.on()
+    LED6.on()
+    LED10.on()
+    LED4.on()
+    LED2.on()
+    return
+
+def display4():
+    LED9.on()
+    LED10.on()
+    LED4.on()
+    LED6.on()
+    return
+
+def display5():
+    LED7.on()
+    LED9.on()
+    LED10.on()
+    LED4.on()
+    LED2.on()
+    return
+
+def display6():
+    LED7.on()
+    LED9.on()
+    LED1.on()
+    LED2.on()
+    LED4.on()
+    LED10.on()
+    return
+
+def display7():
+    LED7.on()
+    LED6.on()
+    LED4.on()
+    return
+
+def display8():
+    LED7.on()
+    LED6.on()
+    LED4.on()
+    LED2.on()
+    LED1.on()
+    LED9.on()
+    LED10.on()
+    return
+
+def display9():
+    LED9.on()
+    LED10.on()
+    LED7.on()
+    LED6.on()
+    LED4.on()
+    return
+
+def display0():
+    LED7.on()
+    LED9.on()
+    LED6.on()
+    LED1.on()
+    LED2.on()
+    LED4.on()
+    return
+
+
+    
+###executable code here
+#while True:
+    alloff()
+    display1()
+    sleep(1)
+    alloff()
+    display2()
+    sleep(1)
+    alloff()
+    display3()
+    sleep(1)
+    alloff()
+    display4()
+    sleep(1)
+    alloff()
+    display5()
+    sleep(1)
+    alloff()
+    display6()
+    sleep(1)
+    alloff()
+    display7()
+    sleep(1)
+    alloff()
+    display8()
+    sleep(1)
+    alloff()
+    display9()
+    sleep(1)
+    alloff()
+    display0()
+    sleep(1)
+    alloff()
+    
+    
+
+ 
+def A():
+    LED1.on()
+    LED4.on()
+    LED10.on()
+    LED9.on()
+    LED6.on()
+    LED7.on()
+    return
+
+def a():
+    LED10.on()
+    LED1.on()
+    LED2.on()
+    LED4.on()
+    LED5.on()
+    return
+
+def B():
+    LED1.on()
+    LED2.on()
+    LED4.on()
+    LED5.on()
+    LED6.on()
+    LED7.on()
+    LED9.on()
+    LED10.on()
+    return
+
+def b():
+    LED9.on()
+    LED1.on()
+    LED2.on()
+    LED10.on()
+    LED4.on()
+    return
+
+def c():
+    LED10.on()
+    LED1.on()
+    LED2.on()
+    return
+
+def D():
+    LED7.on()
+    LED9.on()
+    LED6.on()
+    LED1.on()
+    LED2.on()
+    LED4.on()
+    LED10.on()
+    LED5.on()
+    return
+
+
+def E():
+    LED7.on()
+    LED9.on()
+    LED10.on()
+    LED1.on()
+    LED2.on()
+    return
+
+def F():
+    LED7.on()
+    LED9.on()
+    LED10.on()
+    LED1.on()
+    return
+
+def g():
+    LED9.on()
+    LED7.on()
+    LED6.on()
+    LED10.on()
+    LED4.on()
+    LED2.on()
+    return
+
+
+x=input("what number or letter would you like to see")
+if x=="0":
+    display0()
+elif x =="1":
+    display1()
+elif x=="2":
+    display2()
+elif x =="3":
+    display3()
+elif x=="4":
+    display4()
+elif x=="5":
+    display5()
+elif x=="6":
+    display6()
+elif x=="7":
+    display7()
+elif x=="8":
+    display8()
+elif x=="9":
+    display9()
